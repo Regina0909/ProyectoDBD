@@ -131,4 +131,44 @@ Public Class FormServicios
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
+
+    Private Sub DGVservicio_SelectionChanged(sender As Object, e As EventArgs) Handles DGVservicio.SelectionChanged
+
+        'If DGVpaciente.SelectedRows.Count > 0 Then
+        '    Dim row As DataGridViewRow = DGVpaciente.SelectedRows(0)
+
+        '    TxtNombre.Text = row.Cells("nombrePaciente").Value.ToString()
+        '    TxtApellido.Text = row.Cells("apellidoPaciente").Value.ToString()
+
+        '    If TypeOf row.Cells("fechaRegistro").Value Is DateTime Then
+        '        Dim fechaRegistro As DateTime = DirectCast(row.Cells("fechaRegistro").Value, DateTime)
+        '        DatePaciente.Value = fechaRegistro ' Assign the DateTime value to the DateTimePicker control
+        '    End If
+
+        '    TxtTelefono.Text = row.Cells("telefono").Value.ToString()
+        '    TxtDireccion.Text = row.Cells("direccion").Value.ToString()
+        '    TxtEmail.Text = row.Cells("email").Value.ToString()
+        '    TxtAlergias.Text = row.Cells("alergias").Value.ToString()
+        '    TxtNotas.Text = row.Cells("notas").Value.ToString()
+        'End If
+
+        If DGVservicio.SelectedRows.Count > 0 Then
+            Dim row As DataGridViewRow = DGVservicio.SelectedRows(0)
+
+            TxtNombre.Text = row.Cells("nombreServicio").Value.ToString()
+
+            ' Set the selected value for PacienteCbx ComboBox
+
+
+            ' Set the selected value for ServicioCbx ComboBox
+
+            ' Set the value for NumServicios NumericUpDown control
+            If TypeOf row.Cells("costoServicio").Value Is Decimal Then
+                Dim costoServicio As Decimal = Convert.ToInt32(row.Cells("costoServicio").Value)
+                TxtCosto.Text = costoServicio
+            End If
+
+        End If
+
+    End Sub
 End Class

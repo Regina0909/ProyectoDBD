@@ -90,7 +90,7 @@ Public Class PacienteDao
     Public Function MostrarRegistros() As DataSet
         Dim ds As New DataSet
         Try
-            Dim tsql As String = "Select * from Paciente"
+            Dim tsql As String = "Select * from Paciente WHERE deleted = 0"
             Dim conn As New SqlConnection(strConn)
             Dim da As New SqlDataAdapter(tsql, conn)
             da.Fill(ds)

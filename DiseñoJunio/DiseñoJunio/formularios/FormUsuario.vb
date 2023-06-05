@@ -149,4 +149,19 @@
             MsgBox("Error al buscar registros: " & ex.Message, MsgBoxStyle.Critical, "Clinica")
         End Try
     End Sub
+
+    Private Sub DGVusuario_SelectionChanged(sender As Object, e As EventArgs) Handles DGVusuario.SelectionChanged
+        If DGVusuario.SelectedRows.Count > 0 Then
+            Dim row As DataGridViewRow = DGVusuario.SelectedRows(0)
+
+            TxtNombre.Text = row.Cells("nombreUsuario").Value.ToString()
+            TxtClave.Text = row.Cells("claveUsuario").Value.ToString()
+
+
+        End If
+    End Sub
+
+    Private Sub DGVusuario_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVusuario.CellContentClick
+
+    End Sub
 End Class

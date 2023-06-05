@@ -5,27 +5,42 @@
     Private dConsulta As New ConsultaDao
 
     Sub LlnerarServicio()
+
         Try
-            ServicioCbx.DataSource = dServicio.MostrarRegistros.Tables(0)
+            Dim dataTable As DataTable = dServicio.MostrarRegistros.Tables(0)
+            dataTable.DefaultView.RowFilter = "deleted = 0" ' Filtrar los registros eliminados
+            ServicioCbx.DataSource = dataTable.DefaultView
             ServicioCbx.DisplayMember = "nombreServicio"
             ServicioCbx.ValueMember = "servicioID"
             ServicioCbx.Refresh()
         Catch ex As Exception
             MsgBox("Error al mostrar Servicio", MsgBoxStyle.Critical, "Clinica")
         End Try
+
     End Sub
 
     Sub LlenarPaciente()
+
         Try
-            PacienteCbx.DataSource = dPaciente.MostrarRegistros.Tables(0)
-            PacienteCbx.DisplayMember = "nombrePaciente"
+            Dim dataTable As DataTable = dPaciente.MostrarRegistros.Tables(0)
+            dataTable.Columns.Add("nombreCompleto", GetType(String))
+
+            For Each row As DataRow In dataTable.Rows
+                Dim nombre As String = row("nombrePaciente").ToString()
+                Dim apellido As String = row("apellidoPaciente").ToString()
+                row("nombreCompleto") = nombre & " " & apellido
+            Next
+
+            dataTable.DefaultView.RowFilter = "deleted = 0" ' Filtrar los registros eliminados
+            PacienteCbx.DataSource = dataTable.DefaultView
+            PacienteCbx.DisplayMember = "nombreCompleto"
             PacienteCbx.ValueMember = "pacienteID"
             PacienteCbx.Refresh()
         Catch ex As Exception
             MsgBox("Error al mostrar Paciente", MsgBoxStyle.Critical, "Clinica")
         End Try
-    End Sub
 
+    End Sub
 
 
 
@@ -186,13 +201,7 @@
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-    End Sub
-
-    Private Sub PacienteCbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PacienteCbx.SelectedIndexChanged
-
-    End Sub
 
 
 
@@ -217,6 +226,35 @@
             ' Asignar el valor de consultaID al TextBox "txtConsultaID" en el formulario Factura
 
             frmFactura.ShowDialog()
+        End If
+
+
+    End Sub
+
+    Private Sub DGVconsulta_SelectionChanged(sender As Object, e As EventArgs) Handles DGVconsulta.SelectionChanged
+
+        If DGVconsulta.SelectedRows.Count > 0 Then
+            Dim row As DataGridViewRow = DGVconsulta.SelectedRows(0)
+
+            ' Set the selected value for PacienteCbx ComboBox
+            Dim pacienteID As Integer = Convert.ToInt32(row.Cells("PacienteID").Value)
+            PacienteCbx.SelectedValue = pacienteID.ToString()
+
+            ' Set the selected value for ServicioCbx ComboBox
+            Dim servicioID As Integer = Convert.ToInt32(row.Cells("Servicio").Value)
+            ServicioCbx.SelectedValue = servicioID.ToString()
+
+            ' Set the value for NumServicios NumericUpDown control
+            If TypeOf row.Cells("cantServicios").Value Is Integer Then
+                Dim cantServicios As Integer = Convert.ToInt32(row.Cells("cantServicios").Value)
+                NumServicios.Value = cantServicios
+            End If
+
+            ' Set the value for DateConsulta DateTimePicker control
+            If TypeOf row.Cells("fechaConsulta").Value Is DateTime Then
+                Dim fechaConsulta As DateTime = DirectCast(row.Cells("fechaConsulta").Value, DateTime)
+                DateConsulta.Value = fechaConsulta
+            End If
         End If
 
 

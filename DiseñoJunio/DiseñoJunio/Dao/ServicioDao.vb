@@ -53,7 +53,7 @@ Public Class ServicioDao
     Public Function MostrarRegistros() As DataSet
         Dim ds As New DataSet
         Try
-            Dim tsql As String = "select * from Servicio"
+            Dim tsql As String = "select * from Servicio WHERE deleted = 0"
             Dim conn As New SqlConnection(strConn)
             Dim da As New SqlDataAdapter(tsql, conn)
             da.Fill(ds)

@@ -159,7 +159,29 @@
         End Try
     End Sub
 
+    Private Sub DGVpaciente_SelectionChanged(sender As Object, e As EventArgs) Handles DGVpaciente.SelectionChanged
 
+        If DGVpaciente.SelectedRows.Count > 0 Then
+            Dim row As DataGridViewRow = DGVpaciente.SelectedRows(0)
 
+            TxtNombre.Text = row.Cells("nombrePaciente").Value.ToString()
+            TxtApellido.Text = row.Cells("apellidoPaciente").Value.ToString()
 
+            If TypeOf row.Cells("fechaRegistro").Value Is DateTime Then
+                Dim fechaRegistro As DateTime = DirectCast(row.Cells("fechaRegistro").Value, DateTime)
+                DatePaciente.Value = fechaRegistro ' Assign the DateTime value to the DateTimePicker control
+            End If
+
+            TxtTelefono.Text = row.Cells("telefono").Value.ToString()
+            TxtDireccion.Text = row.Cells("direccion").Value.ToString()
+            TxtEmail.Text = row.Cells("email").Value.ToString()
+            TxtAlergias.Text = row.Cells("alergias").Value.ToString()
+            TxtNotas.Text = row.Cells("notas").Value.ToString()
+        End If
+
+    End Sub
+
+    Private Sub DGVpaciente_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVpaciente.CellContentClick
+
+    End Sub
 End Class

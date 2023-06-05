@@ -43,17 +43,22 @@ Public Class ConsultaDao
     End Function
 
     Public Function MostrarRegistros() As DataSet 'EDITAR'
+
         Dim ds As New DataSet
         Try
-            Dim tsql As String = "SELECT Consulta.consultaID, Consulta.cantServicios, Consulta.fechaConsulta, Consulta.pacienteID, Consulta.servicioID, Servicio.nombreServicio as 'nomServicio', Consulta.deleted FROM Consulta INNER JOIN Servicio ON Consulta.servicioID = Servicio.ServicioID"
+            Dim tsql As String = "SELECT Consulta.consultaID, Consulta.cantServicios, Consulta.fechaConsulta, Consulta.pacienteID, Consulta.servicioID, Servicio.nombreServicio as 'nomServicio' FROM Consulta INNER JOIN Servicio ON Consulta.servicioID = Servicio.ServicioID"
+
             Dim conn As New SqlConnection(strConn)
             Dim da As New SqlDataAdapter(tsql, conn)
             da.Fill(ds)
-            ds.Tables(0).Columns("servicioID").ColumnName = "Servicio"
 
+            If ds.Tables.Count > 0 AndAlso ds.Tables(0).Rows.Count > 0 Then
+                ds.Tables(0).Columns("servicioID").ColumnName = "Servicio"
+            End If
         Catch ex As Exception
         End Try
         Return ds
+
     End Function
 
     Public Function EditarRegistro(ByVal consulta As ConsultaEntidad) As Boolean

@@ -85,6 +85,7 @@ Public Class UsuarioDao
         Dim ds As New DataSet
         Try
             Dim tsql As String = "select * from Usuario"
+
             Dim conn As New SqlConnection(strConn)
             Dim da As New SqlDataAdapter(tsql, conn)
             da.Fill(ds)
