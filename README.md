@@ -1,6 +1,5 @@
 # ProyectoDBD
 1-Reportes, menu reportes
-2-Log in
 6-Agregar validación de que no se puedan añadir fechas anteriores a la actual
 7-Boton guardar en factura
 8-Validacion para que no se pueda guardar lo mismo dos veces
