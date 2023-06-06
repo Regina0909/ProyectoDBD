@@ -184,4 +184,8 @@
     Private Sub DGVpaciente_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVpaciente.CellContentClick
 
     End Sub
+
+    Private Sub PanelTitleBar_Paint(sender As Object, e As PaintEventArgs) Handles PanelTitleBar.Paint
+
+    End Sub
 End Class

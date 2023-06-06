@@ -4,9 +4,6 @@
     Dim usuario As New UsuarioEntidad
 
     'QUE SE LLENEN LOS CAMPOS CUANDO SE SELECCIONEN'
-
-
-
     Sub MostrarRegistros()
         Try
             DGVusuario.DataSource = dUsuario.MostrarRegistros().Tables(0)
