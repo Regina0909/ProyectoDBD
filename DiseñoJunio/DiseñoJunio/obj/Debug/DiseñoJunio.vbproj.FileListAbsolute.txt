@@ -18,23 +18,3 @@ C:\Users\Maria Regina\source\repos\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJu
 C:\Users\Maria Regina\source\repos\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormRegFactura.resources
 C:\Users\Maria Regina\source\repos\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormImprimir.resources
 C:\Users\Maria Regina\source\repos\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormOpcReporte.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\bin\Debug\DiseñoJunio.exe.config
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\bin\Debug\DiseñoJunio.exe
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\bin\Debug\DiseñoJunio.pdb
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\bin\Debug\DiseñoJunio.xml
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.vbproj.AssemblyReference.cache
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.Form1.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormConsulta.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormImprimir.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormOpciones.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormPaciente.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormRegFactura.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormServicios.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormUsuario.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.FormOpcReporte.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.Resources.resources
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.vbproj.GenerateResource.cache
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.vbproj.CoreCompileInputs.cache
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.exe
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.xml
-C:\Users\dayer\Desktop\Junio\ProyectoDBD-main\ProyectoDBD-main\DiseñoJunio\DiseñoJunio\obj\Debug\DiseñoJunio.pdb

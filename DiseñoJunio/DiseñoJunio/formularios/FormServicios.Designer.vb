@@ -22,8 +22,6 @@ Partial Class FormServicios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Buscar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.GBservicio = New System.Windows.Forms.GroupBox()
@@ -37,62 +35,35 @@ Partial Class FormServicios
         Me.TxtCosto = New System.Windows.Forms.TextBox()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtPrecio = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
         Me.GBservicio.SuspendLayout()
         CType(Me.DGVservicio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(763, 60)
-        Me.Panel1.TabIndex = 16
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(190, 18)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(154, 20)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Gestión de Servicios"
-        '
         'Buscar
         '
         Me.Buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Buscar.Location = New System.Drawing.Point(356, 88)
-        Me.Buscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Buscar.Location = New System.Drawing.Point(475, 108)
         Me.Buscar.Name = "Buscar"
-        Me.Buscar.Size = New System.Drawing.Size(78, 32)
+        Me.Buscar.Size = New System.Drawing.Size(104, 39)
         Me.Buscar.TabIndex = 18
         Me.Buscar.Text = "Buscar"
         Me.Buscar.UseVisualStyleBackColor = True
         '
         'TxtBuscar
         '
-        Me.TxtBuscar.Location = New System.Drawing.Point(33, 93)
-        Me.TxtBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtBuscar.Location = New System.Drawing.Point(44, 114)
         Me.TxtBuscar.Name = "TxtBuscar"
-        Me.TxtBuscar.Size = New System.Drawing.Size(312, 20)
+        Me.TxtBuscar.Size = New System.Drawing.Size(414, 22)
         Me.TxtBuscar.TabIndex = 19
         '
         'GBservicio
         '
         Me.GBservicio.Controls.Add(Me.DGVservicio)
         Me.GBservicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBservicio.Location = New System.Drawing.Point(33, 189)
-        Me.GBservicio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBservicio.Location = New System.Drawing.Point(21, 188)
         Me.GBservicio.Name = "GBservicio"
-        Me.GBservicio.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GBservicio.Size = New System.Drawing.Size(442, 227)
+        Me.GBservicio.Size = New System.Drawing.Size(589, 279)
         Me.GBservicio.TabIndex = 20
         Me.GBservicio.TabStop = False
         Me.GBservicio.Text = "Registros: 0"
@@ -100,17 +71,16 @@ Partial Class FormServicios
         'DGVservicio
         '
         Me.DGVservicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVservicio.Location = New System.Drawing.Point(38, 30)
-        Me.DGVservicio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DGVservicio.Location = New System.Drawing.Point(50, 26)
         Me.DGVservicio.Name = "DGVservicio"
         Me.DGVservicio.RowHeadersWidth = 51
         Me.DGVservicio.RowTemplate.Height = 24
-        Me.DGVservicio.Size = New System.Drawing.Size(364, 192)
+        Me.DGVservicio.Size = New System.Drawing.Size(485, 236)
         Me.DGVservicio.TabIndex = 4
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Panel2.Controls.Add(Me.BtnEliminar)
         Me.Panel2.Controls.Add(Me.BtnEditar)
         Me.Panel2.Controls.Add(Me.BtnNuevo)
@@ -120,31 +90,27 @@ Partial Class FormServicios
         Me.Panel2.Controls.Add(Me.TxtNombre)
         Me.Panel2.Controls.Add(Me.TxtPrecio)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel2.Location = New System.Drawing.Point(483, 60)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Location = New System.Drawing.Point(644, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(280, 390)
+        Me.Panel2.Size = New System.Drawing.Size(373, 509)
         Me.Panel2.TabIndex = 21
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnEliminar.Location = New System.Drawing.Point(99, 340)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnEliminar.Location = New System.Drawing.Point(127, 390)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(110, 32)
+        Me.BtnEliminar.Size = New System.Drawing.Size(147, 39)
         Me.BtnEliminar.TabIndex = 8
         Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = False
+        Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'BtnEditar
         '
         Me.BtnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnEditar.Location = New System.Drawing.Point(99, 295)
-        Me.BtnEditar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnEditar.Location = New System.Drawing.Point(127, 327)
         Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(110, 32)
+        Me.BtnEditar.Size = New System.Drawing.Size(147, 39)
         Me.BtnEditar.TabIndex = 7
         Me.BtnEditar.Text = "Editar"
         Me.BtnEditar.UseVisualStyleBackColor = True
@@ -152,10 +118,9 @@ Partial Class FormServicios
         'BtnNuevo
         '
         Me.BtnNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnNuevo.Location = New System.Drawing.Point(99, 248)
-        Me.BtnNuevo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnNuevo.Location = New System.Drawing.Point(127, 268)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(110, 32)
+        Me.BtnNuevo.Size = New System.Drawing.Size(147, 39)
         Me.BtnNuevo.TabIndex = 6
         Me.BtnNuevo.Text = "Nuevo"
         Me.BtnNuevo.UseVisualStyleBackColor = True
@@ -163,10 +128,9 @@ Partial Class FormServicios
         'BtnGuardar
         '
         Me.BtnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnGuardar.Location = New System.Drawing.Point(99, 199)
-        Me.BtnGuardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnGuardar.Location = New System.Drawing.Point(127, 204)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(110, 32)
+        Me.BtnGuardar.Size = New System.Drawing.Size(147, 39)
         Me.BtnGuardar.TabIndex = 5
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = True
@@ -174,57 +138,51 @@ Partial Class FormServicios
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(28, 45)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(31, 55)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 17)
+        Me.Label1.Size = New System.Drawing.Size(80, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nombre:"
         '
         'TxtCosto
         '
-        Me.TxtCosto.Location = New System.Drawing.Point(99, 110)
-        Me.TxtCosto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtCosto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCosto.Location = New System.Drawing.Point(117, 127)
         Me.TxtCosto.Name = "TxtCosto"
-        Me.TxtCosto.Size = New System.Drawing.Size(130, 20)
+        Me.TxtCosto.Size = New System.Drawing.Size(172, 30)
         Me.TxtCosto.TabIndex = 3
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(99, 43)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNombre.Location = New System.Drawing.Point(117, 54)
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(130, 20)
+        Me.TxtNombre.Size = New System.Drawing.Size(172, 30)
         Me.TxtNombre.TabIndex = 2
         '
         'TxtPrecio
         '
         Me.TxtPrecio.AutoSize = True
-        Me.TxtPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPrecio.Location = New System.Drawing.Point(37, 111)
-        Me.TxtPrecio.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.TxtPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.TxtPrecio.Location = New System.Drawing.Point(42, 134)
         Me.TxtPrecio.Name = "TxtPrecio"
-        Me.TxtPrecio.Size = New System.Drawing.Size(52, 17)
+        Me.TxtPrecio.Size = New System.Drawing.Size(69, 20)
         Me.TxtPrecio.TabIndex = 1
         Me.TxtPrecio.Text = "Precio:"
         '
         'FormServicios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Gainsboro
-        Me.ClientSize = New System.Drawing.Size(763, 450)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(1017, 509)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.GBservicio)
         Me.Controls.Add(Me.Buscar)
         Me.Controls.Add(Me.TxtBuscar)
-        Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormServicios"
         Me.Text = "FormServicios"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.GBservicio.ResumeLayout(False)
         CType(Me.DGVservicio, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
@@ -233,9 +191,6 @@ Partial Class FormServicios
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label3 As Label
     Friend WithEvents Buscar As Button
     Friend WithEvents TxtBuscar As TextBox
     Friend WithEvents GBservicio As GroupBox

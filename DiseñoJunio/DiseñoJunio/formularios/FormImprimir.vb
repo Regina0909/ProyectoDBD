@@ -18,10 +18,6 @@
 
 
 
-
-
-
-
             If (dFactura.GuardarRegistro(factura) = True) Then
                 MsgBox("Registro guardado satisfactoriamente.", MsgBoxStyle.Information, "Clinica")
             Else

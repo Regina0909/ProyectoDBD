@@ -114,9 +114,9 @@
         TxtAlergias.Clear()
         TxtNotas.Clear()
 
-        BtnEditar.Enabled = False
-        BtnEliminar.Enabled = False
-        BtnGuardar.Enabled = True
+        'BtnEditar.Enabled = False
+        'BtnEliminar.Enabled = False
+        'BtnGuardar.Enabled = True
 
         TxtNombre.Focus()
         TxtApellido.Focus()
@@ -185,7 +185,11 @@
 
     End Sub
 
-    Private Sub PanelTitleBar_Paint(sender As Object, e As PaintEventArgs) Handles PanelTitleBar.Paint
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PanelTitleBar_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 End Class

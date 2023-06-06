@@ -4,6 +4,9 @@
     Dim usuario As New UsuarioEntidad
 
     'QUE SE LLENEN LOS CAMPOS CUANDO SE SELECCIONEN'
+
+
+
     Sub MostrarRegistros()
         Try
             DGVusuario.DataSource = dUsuario.MostrarRegistros().Tables(0)
@@ -95,9 +98,9 @@
 
         TxtNombre.Clear()
         TxtClave.Clear()
-        BtnEditar.Enabled = False
-        BtnEliminar.Enabled = False
-        BtnGuardar.Enabled = True
+        'BtnEditar.Enabled = False
+        'BtnEliminar.Enabled = False
+        'BtnGuardar.Enabled = True
         TxtNombre.Focus()
         TxtClave.Focus()
 
@@ -159,6 +162,10 @@
     End Sub
 
     Private Sub DGVusuario_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVusuario.CellContentClick
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

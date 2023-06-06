@@ -22,8 +22,6 @@ Partial Class FormPaciente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PanelTitleBar = New System.Windows.Forms.Panel()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DGVpaciente = New System.Windows.Forms.DataGridView()
         Me.DatePaciente = New System.Windows.Forms.DateTimePicker()
@@ -33,7 +31,6 @@ Partial Class FormPaciente
         Me.TxtEmail = New System.Windows.Forms.TextBox()
         Me.TxtAlergias = New System.Windows.Forms.TextBox()
         Me.TxtNotas = New System.Windows.Forms.TextBox()
-        Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -48,42 +45,20 @@ Partial Class FormPaciente
         Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.BtnEditar = New System.Windows.Forms.Button()
         Me.BtnGuardar = New System.Windows.Forms.Button()
-        Me.PanelTitleBar.SuspendLayout()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGVpaciente, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'PanelTitleBar
-        '
-        Me.PanelTitleBar.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.PanelTitleBar.Controls.Add(Me.Label10)
-        Me.PanelTitleBar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelTitleBar.Location = New System.Drawing.Point(0, 0)
-        Me.PanelTitleBar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.PanelTitleBar.Name = "PanelTitleBar"
-        Me.PanelTitleBar.Size = New System.Drawing.Size(832, 55)
-        Me.PanelTitleBar.TabIndex = 27
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Palatino Linotype", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(241, 0)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(324, 44)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Gestión de Pacientes"
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DGVpaciente)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(22, 412)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(46, 152)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(736, 232)
+        Me.GroupBox1.Size = New System.Drawing.Size(830, 468)
         Me.GroupBox1.TabIndex = 29
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Registros Guardados:"
@@ -91,92 +66,79 @@ Partial Class FormPaciente
         'DGVpaciente
         '
         Me.DGVpaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVpaciente.Location = New System.Drawing.Point(40, 33)
-        Me.DGVpaciente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DGVpaciente.Location = New System.Drawing.Point(25, 43)
         Me.DGVpaciente.Name = "DGVpaciente"
         Me.DGVpaciente.RowHeadersWidth = 51
         Me.DGVpaciente.RowTemplate.Height = 24
-        Me.DGVpaciente.Size = New System.Drawing.Size(678, 194)
+        Me.DGVpaciente.Size = New System.Drawing.Size(784, 401)
         Me.DGVpaciente.TabIndex = 4
         '
         'DatePaciente
         '
-        Me.DatePaciente.Location = New System.Drawing.Point(112, 178)
-        Me.DatePaciente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DatePaciente.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DatePaciente.Location = New System.Drawing.Point(1055, 221)
         Me.DatePaciente.Name = "DatePaciente"
-        Me.DatePaciente.Size = New System.Drawing.Size(194, 20)
+        Me.DatePaciente.Size = New System.Drawing.Size(257, 22)
         Me.DatePaciente.TabIndex = 65
         '
         'TxtApellido
         '
-        Me.TxtApellido.Location = New System.Drawing.Point(461, 111)
-        Me.TxtApellido.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtApellido.Location = New System.Drawing.Point(1055, 135)
         Me.TxtApellido.Name = "TxtApellido"
-        Me.TxtApellido.Size = New System.Drawing.Size(150, 20)
+        Me.TxtApellido.Size = New System.Drawing.Size(257, 30)
         Me.TxtApellido.TabIndex = 64
         '
         'TxtTelefono
         '
-        Me.TxtTelefono.Location = New System.Drawing.Point(461, 171)
-        Me.TxtTelefono.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTelefono.Location = New System.Drawing.Point(1055, 304)
         Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(150, 20)
+        Me.TxtTelefono.Size = New System.Drawing.Size(257, 30)
         Me.TxtTelefono.TabIndex = 63
         '
         'TxtDireccion
         '
-        Me.TxtDireccion.Location = New System.Drawing.Point(112, 234)
-        Me.TxtDireccion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtDireccion.Location = New System.Drawing.Point(1055, 397)
         Me.TxtDireccion.Name = "TxtDireccion"
-        Me.TxtDireccion.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.TxtDireccion.Size = New System.Drawing.Size(150, 20)
+        Me.TxtDireccion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TxtDireccion.Size = New System.Drawing.Size(257, 30)
         Me.TxtDireccion.TabIndex = 62
         '
         'TxtEmail
         '
-        Me.TxtEmail.Location = New System.Drawing.Point(461, 232)
-        Me.TxtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtEmail.Location = New System.Drawing.Point(1055, 478)
         Me.TxtEmail.Name = "TxtEmail"
-        Me.TxtEmail.Size = New System.Drawing.Size(150, 20)
+        Me.TxtEmail.Size = New System.Drawing.Size(257, 30)
         Me.TxtEmail.TabIndex = 61
         '
         'TxtAlergias
         '
-        Me.TxtAlergias.Location = New System.Drawing.Point(112, 293)
-        Me.TxtAlergias.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtAlergias.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtAlergias.Location = New System.Drawing.Point(1055, 566)
         Me.TxtAlergias.Name = "TxtAlergias"
         Me.TxtAlergias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TxtAlergias.Size = New System.Drawing.Size(150, 20)
+        Me.TxtAlergias.Size = New System.Drawing.Size(257, 30)
         Me.TxtAlergias.TabIndex = 60
         '
         'TxtNotas
         '
-        Me.TxtNotas.Location = New System.Drawing.Point(461, 293)
-        Me.TxtNotas.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtNotas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNotas.Location = New System.Drawing.Point(1055, 662)
         Me.TxtNotas.Name = "TxtNotas"
         Me.TxtNotas.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.TxtNotas.Size = New System.Drawing.Size(150, 20)
+        Me.TxtNotas.Size = New System.Drawing.Size(257, 30)
         Me.TxtNotas.TabIndex = 59
-        '
-        'TxtNombre
-        '
-        Me.TxtNombre.BackColor = System.Drawing.Color.White
-        Me.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNombre.Location = New System.Drawing.Point(112, 109)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(148, 17)
-        Me.TxtNombre.TabIndex = 58
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label8.Location = New System.Drawing.Point(409, 293)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(980, 672)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(55, 17)
+        Me.Label8.Size = New System.Drawing.Size(64, 20)
         Me.Label8.TabIndex = 57
         Me.Label8.Text = "Notas:"
         '
@@ -184,10 +146,9 @@ Partial Class FormPaciente
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label7.Location = New System.Drawing.Point(41, 293)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(960, 573)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 17)
+        Me.Label7.Size = New System.Drawing.Size(84, 20)
         Me.Label7.TabIndex = 56
         Me.Label7.Text = "Alergias:"
         '
@@ -195,10 +156,9 @@ Partial Class FormPaciente
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label6.Location = New System.Drawing.Point(410, 234)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(982, 485)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(52, 17)
+        Me.Label6.Size = New System.Drawing.Size(62, 20)
         Me.Label6.TabIndex = 55
         Me.Label6.Text = "Email:"
         '
@@ -206,10 +166,9 @@ Partial Class FormPaciente
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(32, 234)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(953, 404)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 17)
+        Me.Label5.Size = New System.Drawing.Size(96, 20)
         Me.Label5.TabIndex = 54
         Me.Label5.Text = "Dirección:"
         '
@@ -217,21 +176,19 @@ Partial Class FormPaciente
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(392, 171)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(957, 311)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 17)
+        Me.Label4.Size = New System.Drawing.Size(87, 20)
         Me.Label4.TabIndex = 53
-        Me.Label4.Text = "Telefono:"
+        Me.Label4.Text = "Teléfono:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(44, 178)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(978, 221)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 17)
+        Me.Label3.Size = New System.Drawing.Size(66, 20)
         Me.Label3.TabIndex = 52
         Me.Label3.Text = "Fecha:"
         '
@@ -239,10 +196,9 @@ Partial Class FormPaciente
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(388, 111)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(949, 142)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 17)
+        Me.Label2.Size = New System.Drawing.Size(92, 20)
         Me.Label2.TabIndex = 51
         Me.Label2.Text = "Apellidos:"
         '
@@ -250,51 +206,46 @@ Partial Class FormPaciente
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(37, 110)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(954, 68)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(77, 17)
+        Me.Label1.Size = New System.Drawing.Size(90, 20)
         Me.Label1.TabIndex = 50
         Me.Label1.Text = "Nombres:"
         '
         'TxtBuscar
         '
-        Me.TxtBuscar.Location = New System.Drawing.Point(84, 350)
-        Me.TxtBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBuscar.Location = New System.Drawing.Point(119, 67)
         Me.TxtBuscar.Name = "TxtBuscar"
-        Me.TxtBuscar.Size = New System.Drawing.Size(499, 20)
+        Me.TxtBuscar.Size = New System.Drawing.Size(534, 30)
         Me.TxtBuscar.TabIndex = 66
         '
         'BtnBuscar
         '
         Me.BtnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnBuscar.Location = New System.Drawing.Point(596, 342)
-        Me.BtnBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnBuscar.Location = New System.Drawing.Point(697, 68)
         Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(70, 32)
+        Me.BtnBuscar.Size = New System.Drawing.Size(93, 32)
         Me.BtnBuscar.TabIndex = 67
         Me.BtnBuscar.Text = "Buscar"
         Me.BtnBuscar.UseVisualStyleBackColor = True
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnEliminar.Location = New System.Drawing.Point(716, 336)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnEliminar.Location = New System.Drawing.Point(664, 672)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(84, 32)
+        Me.BtnEliminar.Size = New System.Drawing.Size(177, 39)
         Me.BtnEliminar.TabIndex = 71
         Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = False
+        Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'BtnNuevo
         '
         Me.BtnNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnNuevo.Location = New System.Drawing.Point(716, 178)
-        Me.BtnNuevo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnNuevo.Location = New System.Drawing.Point(252, 672)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(84, 32)
+        Me.BtnNuevo.Size = New System.Drawing.Size(177, 39)
         Me.BtnNuevo.TabIndex = 70
         Me.BtnNuevo.Text = "Nuevo"
         Me.BtnNuevo.UseVisualStyleBackColor = True
@@ -302,10 +253,9 @@ Partial Class FormPaciente
         'BtnEditar
         '
         Me.BtnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnEditar.Location = New System.Drawing.Point(716, 257)
-        Me.BtnEditar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnEditar.Location = New System.Drawing.Point(450, 672)
         Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(84, 32)
+        Me.BtnEditar.Size = New System.Drawing.Size(177, 39)
         Me.BtnEditar.TabIndex = 69
         Me.BtnEditar.Text = "Editar"
         Me.BtnEditar.UseVisualStyleBackColor = True
@@ -313,26 +263,45 @@ Partial Class FormPaciente
         'BtnGuardar
         '
         Me.BtnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.BtnGuardar.Location = New System.Drawing.Point(716, 111)
-        Me.BtnGuardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnGuardar.Location = New System.Drawing.Point(46, 672)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(84, 32)
+        Me.BtnGuardar.Size = New System.Drawing.Size(177, 39)
         Me.BtnGuardar.TabIndex = 68
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel2.Controls.Add(Me.GroupBox1)
+        Me.Panel2.Controls.Add(Me.BtnEliminar)
+        Me.Panel2.Controls.Add(Me.BtnNuevo)
+        Me.Panel2.Controls.Add(Me.TxtBuscar)
+        Me.Panel2.Controls.Add(Me.BtnGuardar)
+        Me.Panel2.Controls.Add(Me.BtnBuscar)
+        Me.Panel2.Controls.Add(Me.BtnEditar)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(916, 812)
+        Me.Panel2.TabIndex = 72
+        '
+        'TxtNombre
+        '
+        Me.TxtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNombre.Location = New System.Drawing.Point(1055, 58)
+        Me.TxtNombre.Name = "TxtNombre"
+        Me.TxtNombre.Size = New System.Drawing.Size(257, 30)
+        Me.TxtNombre.TabIndex = 73
+        '
         'FormPaciente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.ClientSize = New System.Drawing.Size(832, 654)
-        Me.Controls.Add(Me.BtnEliminar)
-        Me.Controls.Add(Me.BtnNuevo)
-        Me.Controls.Add(Me.BtnEditar)
-        Me.Controls.Add(Me.BtnGuardar)
-        Me.Controls.Add(Me.BtnBuscar)
-        Me.Controls.Add(Me.TxtBuscar)
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.ClientSize = New System.Drawing.Size(1341, 812)
+        Me.Controls.Add(Me.TxtNombre)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.DatePaciente)
         Me.Controls.Add(Me.TxtApellido)
         Me.Controls.Add(Me.TxtTelefono)
@@ -340,7 +309,6 @@ Partial Class FormPaciente
         Me.Controls.Add(Me.TxtEmail)
         Me.Controls.Add(Me.TxtAlergias)
         Me.Controls.Add(Me.TxtNotas)
-        Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -349,22 +317,16 @@ Partial Class FormPaciente
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.PanelTitleBar)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormPaciente"
         Me.Text = "FormPaciente"
-        Me.PanelTitleBar.ResumeLayout(False)
-        Me.PanelTitleBar.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.DGVpaciente, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents PanelTitleBar As Panel
-    Friend WithEvents Label10 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DGVpaciente As DataGridView
     Friend WithEvents DatePaciente As DateTimePicker
@@ -374,7 +336,6 @@ Partial Class FormPaciente
     Friend WithEvents TxtEmail As TextBox
     Friend WithEvents TxtAlergias As TextBox
     Friend WithEvents TxtNotas As TextBox
-    Friend WithEvents TxtNombre As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
@@ -389,4 +350,6 @@ Partial Class FormPaciente
     Friend WithEvents BtnNuevo As Button
     Friend WithEvents BtnEditar As Button
     Friend WithEvents BtnGuardar As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents TxtNombre As TextBox
 End Class

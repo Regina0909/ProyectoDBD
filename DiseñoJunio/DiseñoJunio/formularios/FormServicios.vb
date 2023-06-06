@@ -93,9 +93,9 @@ Public Class FormServicios
 
         TxtNombre.Clear()
         TxtCosto.Clear()
-        BtnEditar.Enabled = False
-        BtnEliminar.Enabled = False
-        BtnGuardar.Enabled = True
+        'BtnEditar.Enabled = False
+        'BtnEliminar.Enabled = False
+        'BtnGuardar.Enabled = True
         TxtNombre.Focus()
         TxtCosto.Focus()
 

@@ -37,6 +37,16 @@ DiseñoJunio
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:DiseñoJunio.My.Resources.Resources.candado">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.cerrar_con_llave">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DiseñoJunio.My.Resources.Resources.diente">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -58,6 +68,26 @@ DiseñoJunio
 </summary>
 </member>
 <member name="P:DiseñoJunio.My.Resources.Resources.usuario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.usuario__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.usuario__2_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.usuario__2_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.usuario__3_">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

@@ -217,7 +217,9 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logotransparente %283%29.png" />
   </ItemGroup>
@@ -243,6 +245,12 @@
     <None Include="Resources\analitica.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\usuario %281%29.png" />
+    <None Include="Resources\cerrar-con-llave.png" />
+    <None Include="Resources\usuario %282%29.png" />
+    <None Include="Resources\usuario %282%291.png" />
+    <None Include="Resources\usuario %283%29.png" />
+    <None Include="Resources\candado.png" />
     <Content Include="Script\Script05.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

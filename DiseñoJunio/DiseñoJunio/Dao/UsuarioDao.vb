@@ -26,7 +26,6 @@ Public Class UsuarioDao
         End Try
         Return resp
 
-
     End Function
 
     Public Function EditarRegistro(ByVal usuario As UsuarioEntidad) As Boolean
@@ -95,14 +94,14 @@ Public Class UsuarioDao
         Return ds
     End Function
 
-    Public Function BuscarRegistro(ByVal usuarioID As Integer) As UsuarioEntidad
+    Public Function BuscarRegistro(ByVal nombreUsuario As String) As UsuarioEntidad
         Dim usuario As New UsuarioEntidad
         Try
-            Dim tsql As String = "select * from Usuario where usuarioID = @usuarioID"
+            Dim tsql As String = "select * from Usuario where nombreUsuario = @nombreUsuario"
             Dim conn As New SqlConnection(strConn)
             Dim tbl As New DataTable
             Dim da As New SqlDataAdapter(tsql, conn)
-            da.SelectCommand.Parameters.AddWithValue("@usuarioID", usuarioID)
+            da.SelectCommand.Parameters.AddWithValue("@nombreUsuario", nombreUsuario)
             da.Fill(tbl)
             If tbl.Rows.Count > 0 Then
                 usuario.UsuarioID = tbl.Rows(0).Item("usuarioID")
@@ -129,9 +128,6 @@ Public Class UsuarioDao
         End Try
         Return ds
     End Function
-
-
-
 
 
 End Class

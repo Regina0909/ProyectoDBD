@@ -35,33 +35,30 @@ Partial Class FormRegFactura
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(480, 60)
+        Me.Panel1.Size = New System.Drawing.Size(640, 61)
         Me.Panel1.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(96, 9)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(211, 20)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(287, 39)
+        Me.Label2.Size = New System.Drawing.Size(191, 25)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Registro de Facturas"
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnBuscar.Location = New System.Drawing.Point(320, 121)
-        Me.BtnBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.BtnBuscar.Location = New System.Drawing.Point(446, 102)
         Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(63, 28)
+        Me.BtnBuscar.Size = New System.Drawing.Size(116, 34)
         Me.BtnBuscar.TabIndex = 10
         Me.BtnBuscar.Text = "Buscar"
         Me.BtnBuscar.UseVisualStyleBackColor = True
@@ -69,21 +66,18 @@ Partial Class FormRegFactura
         'TxtBuscar
         '
         Me.TxtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBuscar.Location = New System.Drawing.Point(40, 121)
-        Me.TxtBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TxtBuscar.Location = New System.Drawing.Point(64, 106)
         Me.TxtBuscar.Name = "TxtBuscar"
-        Me.TxtBuscar.Size = New System.Drawing.Size(270, 26)
+        Me.TxtBuscar.Size = New System.Drawing.Size(358, 30)
         Me.TxtBuscar.TabIndex = 9
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DGVfacturas)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(22, 189)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(42, 161)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(410, 271)
+        Me.GroupBox1.Size = New System.Drawing.Size(547, 334)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cantidad de Registros:"
@@ -91,25 +85,23 @@ Partial Class FormRegFactura
         'DGVfacturas
         '
         Me.DGVfacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVfacturas.Location = New System.Drawing.Point(16, 25)
-        Me.DGVfacturas.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DGVfacturas.Location = New System.Drawing.Point(22, 31)
         Me.DGVfacturas.Name = "DGVfacturas"
         Me.DGVfacturas.RowHeadersWidth = 51
         Me.DGVfacturas.RowTemplate.Height = 24
-        Me.DGVfacturas.Size = New System.Drawing.Size(374, 232)
+        Me.DGVfacturas.Size = New System.Drawing.Size(498, 286)
         Me.DGVfacturas.TabIndex = 2
         '
         'FormRegFactura
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.ClientSize = New System.Drawing.Size(480, 462)
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.ClientSize = New System.Drawing.Size(640, 509)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormRegFactura"
         Me.Text = "FormRegFactura"
         Me.Panel1.ResumeLayout(False)
