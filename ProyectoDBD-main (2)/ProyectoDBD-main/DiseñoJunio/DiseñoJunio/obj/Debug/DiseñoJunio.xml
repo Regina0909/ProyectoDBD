@@ -1,0 +1,231 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DiseñoJunio
+</name>
+</assembly>
+<members>
+<member name="T:DiseñoJunio.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.analitica">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.calendario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.calendario__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.diente">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.factura">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.logotransparente__3_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.paciente">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DiseñoJunio.My.Resources.Resources.usuario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.ConsultaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.EmpresaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.FacturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.PacienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.ServicioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.UsuarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.ConsultaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.EmpresaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.FacturaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.PacienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.ServicioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.UsuarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.ConsultaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.EmpresaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.FacturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.PacienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.ServicioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSet.UsuarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.ConsultaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.EmpresaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.FacturaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.PacienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.ServicioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.UsuarioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DiseñoJunio.ClinicaBaseDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DiseñoJunio.ClinicaBaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DiseñoJunio.ClinicaBaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager.UpdateAll(DiseñoJunio.ClinicaBaseDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:DiseñoJunio.ClinicaBaseDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
