@@ -9,3 +9,4 @@ Inicio de sesión acepta campos vacíos
 FormConsulta: Cuando se seleccionen filas deshabilitar guardar, también añadir columna eliminada
 arreglar form opciones
 error en guardar factura
+conflicto llave foránea en formconsulta y factura
